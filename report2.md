@@ -1,5 +1,5 @@
 # Part 1
-## **Here is the code for my ChatServer.java**
+## **Here is the code for my `ChatServer.java`**
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -56,7 +56,7 @@ public class ChatServer{
     }
 }
 ```
-## **Here is the code for Server.java, which is identical to Server.java on Prairie Learn**
+## **Here is the code for `Server.java`, which is identical to `Server.java` on Prairie Learn**
 
 ```
 import java.io.IOException;
@@ -115,33 +115,32 @@ public class Server {
 
 **Question: Which methods in your code are called?**
 
-Answer: handleRequest method in the ChatHandler class is called.
+Answer: `handleRequest` method in the `ChatHandler` class is called.
 
 **Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
 
-Answer: url is passed in as an argument, path, lines, greeting, name are fields in my ChatHandler class.
+Answer: `url` is passed in as an argument, `path`, `lines`, `greeting`, `name` are fields in my `ChatHandler` class.
 
 **Question: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
 
-Answer: lines changes to {"jpolitz: Hello"}, greeting changes to "Hello", name changes to "jpolitz". path does not change and is "Chat.txt", because handleRequest method which is called does not modify its value.
+Answer: `lines` changes to `{"jpolitz: Hello"}`, `greeting` changes to `"Hello"`, `name` changes to `"jpolitz"`. `path` does not change and is `"Chat.txt"`, because `handleRequest` method which is called does not modify its value.
 
 ## **Example 2: This is the second time I request /add-message**
 ![Image](lab_report_2_test_new.png)
 
 **Question: Which methods in your code are called?**
 
-Answer: handleRequest method in the ChatHandler class is called.
+Answer: `handleRequest` method in the `ChatHandler` class is called.
 
 **Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
 
-Answer: url is passed in as an argument, path, lines, greeting, name are fields in my ChatHandler class.
+Answer: `url` is passed in as an argument, `path`, `lines`, `greeting`, `name` are fields in my `ChatHandler` class.
 
 **Question: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
 
-Answer: `lines` changes to `{"jpolitz: Hello", "yash: How are you"}`, `greeting` changes to `"How are you"`, `name` changes to `"yash"`. `path` does not change and is `"Chat.txt"`, because handleRequest method which is called does not modify its value.
+Answer: `lines` changes to `{"jpolitz: Hello", "yash: How are you"}`, `greeting` changes to `"How are you"`, `name` changes to `"yash"`. `path` does not change and is `"Chat.txt"`, because `handleRequest` method which is called does not modify its value.
 
 
-## ****
 # Part 2
 ## **Here is `ls` command of absolute path to my private key on my computer. I also displayed a part of the content using `cat` command**
 ![Image](lab_report_2_pic1.png)
