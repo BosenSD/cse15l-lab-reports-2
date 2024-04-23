@@ -126,7 +126,7 @@ Answer: url is passed in as an argument, path, lines, greeting, name are fields 
 Answer: lines changes to {"jpolitz: Hello"}, greeting changes to "Hello", name changes to "jpolitz". path does not change and is "Chat.txt", because handleRequest method which is called does not modify its value.
 
 ## **Example 2: This is the second time I request /add-message**
-![Image](lab_report_2_test2.png)
+![Image](lab_report_2_test_new.png)
 
 **Question: Which methods in your code are called?**
 
@@ -138,7 +138,7 @@ Answer: url is passed in as an argument, path, lines, greeting, name are fields 
 
 **Question: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
 
-Answer: lines changes to {"jpolitz: Hello", "yash: How are you"}, greeting changes to "How are you", name changes to "yash". path does not change and is "Chat.txt", because handleRequest method which is called does not modify its value.
+Answer: `lines` changes to `{"jpolitz: Hello", "yash: How are you"}`, `greeting` changes to `"How are you"`, `name` changes to `"yash"`. `path` does not change and is `"Chat.txt"`, because handleRequest method which is called does not modify its value.
 
 
 ## ****
@@ -157,4 +157,4 @@ Answer: lines changes to {"jpolitz: Hello", "yash: How are you"}, greeting chang
 **I learned using `curl` command with an localhost argument to run the web server in terminal. I also learned how to read the code and passing more arguments with the query mark.**
 
 ## **In week 3, I learned tester library and JUnit package**
-**I learned how to add @Test annotation before each test case. I also learned useing assertEqual() to verify the actual output and my expected output.**
+**I learned how to add `@Test` annotation before each test case. I also learned useing `assertEqual()` to verify the actual output and my expected output.**
