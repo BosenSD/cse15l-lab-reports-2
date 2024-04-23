@@ -119,7 +119,7 @@ Answer: handleRequest method in the ChatHandler class is called.
 
 **Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
 
-Answer: url is passed in as an argument, path, lines, 
+Answer: url is passed in as an argument, path, lines, greeting, name are fields in my ChatHandler class.
 
 **Question: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
 
@@ -130,16 +130,15 @@ Answer: lines changes to {"jpolitz: Hello"}, greeting changes to "Hello", name c
 
 **Question: Which methods in your code are called?**
 
-**Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
-
-
-## **Example 3: This is the third time I request /add-message**
-![Image](lab_report_2_test3.png)
-
-**Question: Which methods in your code are called?**
+Answer: handleRequest method in the ChatHandler class is called.
 
 **Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
 
+Answer: url is passed in as an argument, path, lines, greeting, name are fields in my ChatHandler class.
+
+**Question: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+
+Answer: lines changes to {"jpolitz: Hello", "yash: How are you"}, greeting changes to "How are you", name changes to "yash". path does not change and is "Chat.txt", because handleRequest method which is called does not modify its value.
 
 
 ## ****
