@@ -19,11 +19,8 @@ class ChatHandler implements URLHandler{
 
     String greeting = null;
     String name = null;
-
     public String handleRequest(URI url) throws IOException{
         String query = url.getQuery();
-
-
         if(url.getPath().equals("/add-message")){
             if(query.startsWith("s=")){
                 String secondPart[] = query.split("=", 2);
@@ -40,7 +37,6 @@ class ChatHandler implements URLHandler{
                 for(String s: lines) {
                     result += s + "\n";
                 }
-
                 return result;
             }
         }
@@ -114,6 +110,37 @@ public class Server {
     }
 }
 ```
+## **Example 1: This is the first time I request /add-message**
+![Image](lab_report_2_test1.png)
+
+**Question: Which methods in your code are called?**
+
+Answer: handleRequest method in the ChatHandler class is called.
+
+**Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+
+Answer: url is passed in as an argument, path, lines, 
+
+**Question: How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+
+Answer: lines changes to {"jpolitz: Hello"}, greeting changes to "Hello", name changes to "jpolitz". path does not change and is "Chat.txt", because handleRequest method which is called does not modify its value.
+
+## **Example 2: This is the second time I request /add-message**
+![Image](lab_report_2_test2.png)
+
+**Question: Which methods in your code are called?**
+
+**Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+
+
+## **Example 3: This is the third time I request /add-message**
+![Image](lab_report_2_test3.png)
+
+**Question: Which methods in your code are called?**
+
+**Question: What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+
+
 
 ## ****
 # Part 2
