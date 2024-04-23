@@ -156,4 +156,4 @@ Answer: `lines` changes to `{"jpolitz: Hello", "yash: How are you"}`, `greeting`
 **I learned using `curl` command with an localhost argument to run the web server in terminal. I also learned how to read the code and passing more arguments with the query mark.**
 
 ## **In week 3, I learned tester library and JUnit package**
-**I learned how to add `@Test` annotation before each test case. I also learned useing `assertEqual()` to verify the actual output and my expected output.**
+**I learned how to add `@Test` annotation before each test case. I also learned useing `assertEquals()` to verify the actual output and my expected output.**
